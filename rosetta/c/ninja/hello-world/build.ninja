@@ -1,0 +1,6 @@
+cflags = -Wall -Werror
+
+rule cc
+    command = gcc $cflags -o $out $in
+
+build main: cc main.c
